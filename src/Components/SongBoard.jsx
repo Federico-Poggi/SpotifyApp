@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
-import { useSelector } from "react-redux";
 import SingleSong from "./singleSong";
 
-const SongBoard = () => {
-  const SongFromRedux = useSelector((state) => state.songMain);
+const SongBoard = (song) => {
+  
+    
   return (
     <>
       <Container>
-        <SingleSong song={SongFromRedux} />
+        
+        <SingleSong  />
       </Container>
     </>
   );

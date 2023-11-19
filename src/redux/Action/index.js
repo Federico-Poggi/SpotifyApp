@@ -1,5 +1,6 @@
 // creo variabili da passara ai reducer
 export const QUEEN_SONG = "QUEEN_SONG";
+export const SINGLE_MUSIC='SINGLE_MUSIC'
 export const GetMainSongAction = () => {
   return async (dispatch) => {
     try {
@@ -16,3 +17,13 @@ export const GetMainSongAction = () => {
     }
   };
 };
+
+export const DataInArray=(music)=>{
+  return (dispatch)=>{
+    dispatch({
+      type: SINGLE_MUSIC,
+      payload: music,
+             })
+  }
+  
+}

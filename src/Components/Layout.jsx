@@ -7,18 +7,15 @@ import { useEffect } from "react";
 import { GetMainSongAction } from "../redux/Action/index.js";
 
 const Layout = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(GetMainSongAction());
-  });
+  
 
   return (
     <>
       <Container fluid className="d-flex p-0">
-        <Col xl={2} className="bg-black ">
-          <SideBar />
-        </Col>
-        <Col xl={8}>
+        {/*<Col xl={2} className="bg-black ">*/}
+        {/*  <SideBar />*/}
+        {/*</Col>*/}
+        <Col xl={12}>
           <Outlet />
         </Col>
       </Container>
