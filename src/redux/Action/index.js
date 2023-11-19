@@ -1,7 +1,6 @@
 // creo variabili da passara ai reducer
 export const QUEEN_SONG = "QUEEN_SONG";
-
-export const GetMainSong = () => {
+export const GetMainSongAction = () => {
   return async (dispatch) => {
     try {
       const mainQueenSong = await fetch(
