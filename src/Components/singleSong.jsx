@@ -1,12 +1,18 @@
-import { Card, Container } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 
-const SingleSong = (song) => {
+const SingleSong = ({ music }) => {
   return (
     <>
-      {/* mappo cio che ho ottenuto dalla fetch da reduxAction */}
-      <Card>
-      
-      </Card>
+      {/* <Col className="col-2"> */}
+
+      <Col className="col-2 mx-2">
+        <Card>
+          <Card.Img src={music.album.cover_small} />
+          <Card.Title>{music.title_short}</Card.Title>
+        </Card>
+      </Col>
+
+      {/* </Col> */}
     </>
   );
 };
