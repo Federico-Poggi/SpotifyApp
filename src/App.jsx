@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home";
 function App() {
   return (
-    <>
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -13,7 +13,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

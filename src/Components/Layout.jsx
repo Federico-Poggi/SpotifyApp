@@ -1,24 +1,25 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import SideBar from "./SideBar";
 import SideLibrary from "./SideLibrary";
+import styled from "styled-components";
 
 const Layout = () => {
   return (
     <>
-      <Container fluid className="d-flex p-0 h-100 position-relative">
-        <Col xl={2}>
-          <Row className="position-fixed top-0 start-0">
-            <SideBar />
-            <SideLibrary />
-          </Row>
+      <div className="d-flex">
+        <Col lg={2} className="d-flex flex-column py-2 px-2" id="sideNav">
+          <SideBar />
+
+          <SideLibrary />
         </Col>
-        <Row className="w-100 p-5">
-          <Col xl={12} className="d-flex ">
+
+        <Col lg={2}>
+          <Card>
             <Outlet />
-          </Col>
-        </Row>
-      </Container>
+          </Card>
+        </Col>
+      </div>
     </>
   );
 };

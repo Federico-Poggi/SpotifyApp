@@ -1,3 +1,7 @@
-#root {
+/* #root {
+  height: 100%;
+} */
+
+#sideNav {
   height: 100vh;
 }

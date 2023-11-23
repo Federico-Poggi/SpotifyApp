@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <>
-      <Container className="d-flex flex-wrap mt-4">
+      {/* <Container className="d-flex flex-wrap mt-4">
         <Row className="w-100 justify-content-center">
           <Col className=" d-flex">
             {music.slice(0, 6).map((el) => {
@@ -58,7 +58,35 @@ const Home = () => {
             })}
           </Col>
         </Row>
-      </Container>
+        <Row>
+          <Col className="d-flex">
+            {katy.slice(0, 6).map((single) => {
+              return <KatySong key={single.id} katy={single} />;
+            })}
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex">
+            {katy.slice(0, 6).map((single) => {
+              return <KatySong key={single.id} katy={single} />;
+            })}
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex">
+            {katy.slice(0, 6).map((single) => {
+              return <KatySong key={single.id} katy={single} />;
+            })}
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex">
+            {katy.slice(0, 6).map((single) => {
+              return <KatySong key={single.id} katy={single} />;
+            })}
+          </Col>
+        </Row>
+      </Container> */}
     </>
   );
 };

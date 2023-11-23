@@ -17,8 +17,8 @@ const SideBar = () => {
   return (
     <>
       <StyledDiv>
-        <Navbar>
-          <Card className=" w-100 mx-1 mainSide">
+        <Navbar className="p-0">
+          <Card className=" w-100  mb-2 mainSide">
             <Card.Body className="py-2 px-3">
               <Navbar.Brand>
                 <img src={SpotifyBrand} alt="logo" width={80} />

@@ -8,7 +8,7 @@ const Styledp = styled.p`
 const Footer = () => {
   return (
     <>
-      <footer className="d-flex mx-1">
+      <footer className="d-flex mx-1 ">
         <Styledp className="px-1">Legal</Styledp>
         <Styledp className="px-1">Cookies</Styledp>
         <Styledp className="px-1">Privacy Policy</Styledp>

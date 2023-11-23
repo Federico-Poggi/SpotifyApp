@@ -11,6 +11,7 @@ const StyledP = styled.span`
 const StyledDiv = styled.div`
   .mainSide {
     background-color: #121212;
+    height: 100%;
   }
   .lib {
     background-color: #242424;
@@ -26,17 +27,14 @@ const StyledDiv = styled.div`
     font-weight: bold;
     margin-left: 5%;
   }
-  .bodyCont {
-    height: 82vh;
-  }
 `;
 
 const SideLibrary = () => {
   return (
     <>
-      <StyledDiv>
-        <Card className="mx-1 mainSide d-flex">
-          <Card.Body className="p-0 px-1 d-flex flex-column bodyCont">
+      <StyledDiv className="h-100 d-flex flex-column">
+        <Card className="mainSide d-flex">
+          <Card.Body className="p-0 px-1 d-flex flex-column bodyCont ">
             <div className="d-flex align-items-center m-3">
               <Collection size={20} color="white" />
               <StyledP>Your Library</StyledP>
@@ -64,7 +62,11 @@ const SideLibrary = () => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="d-flex justify-content-center flex-grow-1 align-items-end">
+            {/* <div className="d-flex flex-column container col-10 flex-grow-1 justify-content-end my-3">
+              <Button className="rounded-pill my-1 px-2 py-2">Login</Button>
+              <Button className="rounded-pill my-1 px-2 py-2">Sign Up</Button>
+            </div> */}
+            <div className="d-flex justify-content-center align-items-end flex-grow-1">
               <Footer />
             </div>
           </Card.Body>
